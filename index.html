@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grocery List</title>
+        <link rel="stylesheet" href="style.css">
+
+
+    </head>
+    <body>
+        <!-- Login -->
+        <div id="login-div">
+            <h1>Login</h1>
+            <input type="text" placeholder="Email" id="login-email-input">
+            <input type="password" placeholder="Password" id="login-password-input">
+            <button class="submit-btn" id="authenticate-btn">Login</button>
+            <button id="sign-up-btn" class="login-signup-link">Sign up</button>
+        </div>
+
+        <!-- Register -->
+        <div id="register-div">
+            <h1>Sign Up</h1>
+            <input type="text" placeholder="First Name" id="signup-first-name-input">
+            <input type="text" placeholder="Last Name" id="signup-last-name-input">
+            <input type="text" placeholder="Email" id="signup-email-input">
+            <input type="password" placeholder="Password" id="signup-password-input">
+            <button id="register-btn" class="submit-btn">Register</button>
+            <button id="login-btn" class="login-signup-link">Login</button>
+        </div>
+
+        <!-- Add a menu item -->
+        <div class="add-item-div">
+            <h2>Add a menu item</h2>
+            <div>
+                <div>
+                    <input placeholder="Name" type="text" id="new-menu-item-name-input">
+                    <input placeholder="Cuisine" type="text" id="new-menu-item-cuisine-input">
+                    <input placeholder="Ingredients" type="text" id="new-menu-item-ingredients-input">
+         
+                    <select id="new-menu-item-meal-type-selector">
+                        <option value="">Meal Type</option>
+                        <option value="Breakfast">Breakfast</option>
+                        <option value="Lunch">Lunch</option>
+                        <option value="Dinner">Dinner</option>
+                    </select>
+                    <select name="Difficulty" id="new-menu-item-difficulty-selector">
+                        <option value="">Difficulty</option>
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advanced">Advanced</option>
+                        <option value="Expert">Expert</option>
+                    </select>
+                    <button id="add-new-menu-item-btn"> + Meal </button>
+                    <button id="update-menu-item-btn"> Update </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu -->
+        <div id="menu-div" class="menu-list-div">
+            <h1>Menu</h1>
+            <ul id="available-meals">
+            </ul>
+        </div>
+
+        <!-- Grocery List -->
+        <div id="grocery-list-div" class="list-div">
+            <h1>Shopping list</h1>
+            <ul id="grocery-list">
+            </ul>
+        </div>
+        
+    </body>
+    <script type="text/javascript" src="code.js"></script>
+</html>
